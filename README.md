@@ -1,4 +1,6 @@
-# Fork of LPC11U/LPC13U Code Base, modified to work with a lpc11u37 used in a basic gaming mouse that has a pirate ship on it. #
+# Fork of LPC11U/LPC13U Code Base, modified to work with the lpc11u37 of a a basic gaming mouse with a pirate ship on it. #
+
+Blinks a LED, if you connect one.
 
 clone the repository:
 
@@ -12,13 +14,21 @@ then go to the project root directory and simply:
 
 `make`
 
+This will create a few files in the /LPC11U_LPC13U_CodeBase/bin/ directory
 
-Press the boot select button on the mouse and plug it in, open in file browser.
+
+Flashing:
+
+
+Press the boot select button on the mouse and plug it in, open in a file browser.
 Maybe make a backup copy of the existing firmware.bin file.
+
+On Windoze you can probably simply copy the file over, haven't tried this.
+On Linux you might want to:
 
 `df -h`
 
-should give you a line like:
+which should give you a line like:
 
 /dev/sda        128K  128K     0 100% /media/yourusername/CRP DISABLD
 
@@ -26,7 +36,7 @@ This might be something else than /dev/sda depending on your system.
 
 Now unmount by clicking the eject button in your file browser.
 
-Then do a:
+Then do the following, adjust the /dev/sda if needed:
 
 `sudo dd if=bin/firmware.bin of=/dev/sda seek=4`
 
