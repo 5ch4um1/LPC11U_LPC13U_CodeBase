@@ -34,6 +34,12 @@ After this command has finished, replug the device.
 
 The LED pin is set as Pio1_14, if you have the mouse open and with the mouse wheel and usb cable pointing towards you, it is the left most pin on the header where the side and dpi buttons were connected. You can change this in LPC11U_LPC13U_CodeBase/src/boards/lpcxpresso1347/board_lpcxpresso1347.h
 
+pinout for the side buttons:
+
+![image](https://user-images.githubusercontent.com/36307725/168683922-6a08bb1f-8fa0-4136-9b7b-392a2cee588f.png)
+
+
+
 Access the CLI with:
 
 `screen /dev/ttyACM0`
