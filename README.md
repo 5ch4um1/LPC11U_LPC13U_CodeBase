@@ -1,22 +1,22 @@
-# Fork of LPC11U/LPC13U Code Base, modified to work with a lpc11u37 used in a basic gaming mouse that has a pirate ship on it.#
+# Fork of LPC11U/LPC13U Code Base, modified to work with a lpc11u37 used in a basic gaming mouse that has a pirate ship on it. #
 
 clone the repository:
 
-git clone https://github.com/5ch4um1/LPC11U_LPC13U_CodeBase.git
+`git clone https://github.com/5ch4um1/LPC11U_LPC13U_CodeBase.git`
  
-cd LPC11U_LPC13U_CodeBase/tools/lpcrc/
-make
+`cd LPC11U_LPC13U_CodeBase/tools/lpcrc/
+make`
 
 
 then go to the project root directory and simply:
 
-make
+`make`
 
 
 Press the boot select button on the mouse and plug it in, open in file browser.
 Maybe make a backup copy of the existing firmware.bin file.
 
-df -h
+`df -h`
 
 should give you a line like:
 
@@ -28,7 +28,7 @@ Now unmount by clicking the eject button in your file browser.
 
 Then do a:
 
-sudo dd if=bin/firmware.bin of=/dev/sda seek=4
+`sudo dd if=bin/firmware.bin of=/dev/sda seek=4`
 
 After this command has finished, replug the device.
 
@@ -36,7 +36,7 @@ The LED pin is set as Pio1_14, if you have the mouse open and with the mouse whe
 
 Access the CLI with:
 
-screen /dev/ttyACM0
+`screen /dev/ttyACM0`
 
 
 
