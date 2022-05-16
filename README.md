@@ -1,4 +1,48 @@
-# LPC11U/LPC13U Code Base #
+# Fork of LPC11U/LPC13U Code Base, modified to work with a lpc11u37 used in a basic gaming mouse that has a pirate ship on it.#
+
+clone the repository:
+
+git clone https://github.com/5ch4um1/LPC11U_LPC13U_CodeBase.git
+ 
+cd LPC11U_LPC13U_CodeBase/tools/lpcrc/
+make
+
+
+then go to the project root directory and simply:
+
+make
+
+
+Press the boot select button on the mouse and plug it in, open in file browser.
+Maybe make a backup copy of the existing firmware.bin file.
+
+df -h
+
+should give you a line like:
+
+/dev/sda        128K  128K     0 100% /media/yourusername/CRP DISABLD
+
+This might be something else than /dev/sda depending on your system.
+
+Now unmount by clicking the eject button in your file browser.
+
+Then do a:
+
+sudo dd if=bin/firmware.bin of=/dev/sda seek=4
+
+After this command has finished, replug the device.
+
+The LED pin is set as Pio1_14, if you have the mouse open and with the mouse wheel and usb cable pointing towards you, it is the left most pin on the header where the side and dpi buttons were connected. You can change this in LPC11U_LPC13U_CodeBase/src/boards/lpcxpresso1347/board_lpcxpresso1347.h
+
+Access the CLI with:
+
+screen /dev/ttyACM0
+
+
+
+
+
+## LPC11U/LPC13U Code Base ##
 
 This code base is an attempt at providing a reasonably well-organized, open-source starting point for projects based on the LPC11Uxx and LPC13Uxx family of MCUs.
 

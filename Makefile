@@ -8,7 +8,7 @@ FILENAME=firmware
 BOARD=CFG_BRD_LPCXPRESSO_LPC1347
 
 # Set TARGET to 'lpc11u' or 'lpc13u' depending on the target MCU
-TARGET = lpc13u
+TARGET = lpc11u
 ifeq (lpc11u,$(TARGET))
   CORE = cortex-m0
   # LDSCRIPT = cmsis/lpc11u24.ld

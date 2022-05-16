@@ -58,8 +58,8 @@ extern "C" {
 
     -----------------------------------------------------------------------*/
     // #define CFG_MCU_LPC11U24FBD48_401
-    // #define CFG_MCU_LPC11U37FBD48_401
-    #define CFG_MCU_LPC1347FBD48
+     #define CFG_MCU_LPC11U37FBD48_401
+    //define CFG_MCU_LPC1347FBD48
     // #define CFG_MCU_LPC1347FHN33
 
     /* Basic error checking */
@@ -92,7 +92,7 @@ extern "C" {
     -----------------------------------------------------------------------*/
     #define CFG_FIRMWARE_VERSION_MAJOR      (0)
     #define CFG_FIRMWARE_VERSION_MINOR      (0)
-    #define CFG_FIRMWARE_VERSION_REVISION   (0)
+    #define CFG_FIRMWARE_VERSION_REVISION   (1)
 /*=========================================================================*/
 
 
@@ -183,10 +183,10 @@ extern "C" {
 
     NOTE: GPIO ISRs are handled separately in GPIO INTERRUPTS below
     -----------------------------------------------------------------------*/
-    #define CFG_ENABLE_I2C
-    #define CFG_ENABLE_UART
+    //#define CFG_ENABLE_I2C
+    //#define CFG_ENABLE_UART
     #define CFG_ENABLE_USB
-    #define CFG_ENABLE_TIMER32
+    //#define CFG_ENABLE_TIMER32
 /*=========================================================================*/
 
 
@@ -252,8 +252,8 @@ extern "C" {
     CFG_LED_OFF               The pin state to turn the LED off (0 = low, 1 = high)
 
     -----------------------------------------------------------------------*/
-    #define CFG_LED_PORT                  (0)
-    #define CFG_LED_PIN                   (7)
+    #define CFG_LED_PORT                  (1)
+    #define CFG_LED_PIN                   (14)
     #define CFG_LED_ON                    (1)
     #define CFG_LED_OFF                   (0)
 /*=========================================================================*/
@@ -412,7 +412,7 @@ extern "C" {
     -----------------------------------------------------------------------*/
     #define CFG_INTERFACE
     #define CFG_INTERFACE_MAXMSGSIZE    (256)
-    #define CFG_INTERFACE_PROMPT        "LPC1347 >> "
+    #define CFG_INTERFACE_PROMPT        "harpoon >> "
     #define CFG_INTERFACE_SILENTMODE    (0)
     #define CFG_INTERFACE_DROPCR        (0)
     #define CFG_INTERFACE_ENABLEIRQ     (0)
