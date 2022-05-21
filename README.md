@@ -7,6 +7,7 @@ clone the repository:
 `git clone https://github.com/5ch4um1/LPC11U_LPC13U_CodeBase.git`
  
 `cd LPC11U_LPC13U_CodeBase/tools/lpcrc/`
+`make`
 
 
 then go to the project root directory and simply:
