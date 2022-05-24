@@ -46,43 +46,43 @@ OBJS  += $(OBJ_PATH)/RTX_hook.o
 VPATH += src
 OBJS  += $(OBJ_PATH)/printf-retarget.o
 
-VPATH += src/boards/lpcnfc
-OBJS  += $(OBJ_PATH)/board_lpcnfc.o
+#VPATH += src/boards/lpcnfc
+#OBJS  += $(OBJ_PATH)/board_lpcnfc.o
 
 VPATH += src/boards/lpcxpresso1347
 OBJS  += $(OBJ_PATH)/board_lpcxpresso1347.o
 
-VPATH += src/boards/rf1ghzusb
-OBJS  += $(OBJ_PATH)/board_rf1ghzusb.o
+#VPATH += src/boards/rf1ghzusb
+#OBJS  += $(OBJ_PATH)/board_rf1ghzusb.o
 
-VPATH += src/boards/rf1ghznode
-OBJS  += $(OBJ_PATH)/board_rf1ghznode.o
+#VPATH += src/boards/rf1ghznode
+#OBJS  += $(OBJ_PATH)/board_rf1ghznode.o
 
 VPATH += src/cli
 OBJS  += $(OBJ_PATH)/cli.o 
 OBJS  += $(OBJ_PATH)/commands.o
 
 VPATH += src/cli/commands
-OBJS  += $(OBJ_PATH)/cmd_chibi_addr.o 
-OBJS  += $(OBJ_PATH)/cmd_chibi_tx.o 
+#OBJS  += $(OBJ_PATH)/cmd_chibi_addr.o 
+#OBJS  += $(OBJ_PATH)/cmd_chibi_tx.o 
 OBJS  += $(OBJ_PATH)/cmd_dbg_memrd.o
 OBJS  += $(OBJ_PATH)/cmd_eeprom_read.o 
 OBJS  += $(OBJ_PATH)/cmd_eeprom_write.o 
-OBJS  += $(OBJ_PATH)/cmd_i2c_read.o
-OBJS  += $(OBJ_PATH)/cmd_i2c_scan.o 
-OBJS  += $(OBJ_PATH)/cmd_i2c_write.o 
-OBJS  += $(OBJ_PATH)/cmd_nfc_mfc_ndef.o
-OBJS  += $(OBJ_PATH)/cmd_nfc_mifareclassic_memdump.o
-OBJS  += $(OBJ_PATH)/cmd_nfc_mifareclassic_valueblock.o 
-OBJS  += $(OBJ_PATH)/cmd_nfc_mifareultralight_memdump.o 
-OBJS  += $(OBJ_PATH)/cmd_rtc_read.o
-OBJS  += $(OBJ_PATH)/cmd_rtc_write.o
-OBJS  += $(OBJ_PATH)/cmd_sd_dir.o
+#OBJS  += $(OBJ_PATH)/cmd_i2c_read.o
+#OBJS  += $(OBJ_PATH)/cmd_i2c_scan.o 
+#OBJS  += $(OBJ_PATH)/cmd_i2c_write.o 
+#OBJS  += $(OBJ_PATH)/cmd_nfc_mfc_ndef.o
+#OBJS  += $(OBJ_PATH)/cmd_nfc_mifareclassic_memdump.o
+#OBJS  += $(OBJ_PATH)/cmd_nfc_mifareclassic_valueblock.o 
+#OBJS  += $(OBJ_PATH)/cmd_nfc_mifareultralight_memdump.o 
+#OBJS  += $(OBJ_PATH)/cmd_rtc_read.o
+#OBJS  += $(OBJ_PATH)/cmd_rtc_write.o
+#OBJS  += $(OBJ_PATH)/cmd_sd_dir.o
 OBJS  += $(OBJ_PATH)/cmd_sysinfo.o
-OBJS  += $(OBJ_PATH)/cmd_wifi.o
+#OBJS  += $(OBJ_PATH)/cmd_wifi.o
 
-VPATH += src/core/adc
-OBJS  += $(OBJ_PATH)/adc.o
+#VPATH += src/core/adc
+#OBJS  += $(OBJ_PATH)/adc.o
 
 VPATH += src/core/delay
 OBJS  += $(OBJ_PATH)/delay.o
@@ -99,8 +99,8 @@ OBJS  += $(OBJ_PATH)/fifo.o
 VPATH += src/core/gpio
 OBJS  += $(OBJ_PATH)/gpio.o
 
-VPATH += src/core/i2c
-OBJS  += $(OBJ_PATH)/i2c.o
+#VPATH += src/core/i2c
+#OBJS  += $(OBJ_PATH)/i2c.o
 
 VPATH += src/core/iap
 OBJS  += $(OBJ_PATH)/iap.o
@@ -139,152 +139,152 @@ OBJS  += $(OBJ_PATH)/usbd.o
 VPATH += src/drivers
 OBJS  += $(OBJ_PATH)/timespan.o
 
-VPATH += src/drivers/displays
-OBJS  += $(OBJ_PATH)/smallfonts.o
+#VPATH += src/drivers/displays
+#OBJS  += $(OBJ_PATH)/smallfonts.o
 
-VPATH += src/drivers/displays/bitmap/ssd1306
-OBJS  += $(OBJ_PATH)/ssd1306_i2c.o
+#VPATH += src/drivers/displays/bitmap/ssd1306
+#OBJS  += $(OBJ_PATH)/ssd1306_i2c.o
 
-VPATH += src/drivers/displays/graphic 
-OBJS  += $(OBJ_PATH)/aafonts.o 
-OBJS  += $(OBJ_PATH)/colors.o 
-OBJS  += $(OBJ_PATH)/drawing.o 
-OBJS  += $(OBJ_PATH)/fonts.o 
-OBJS  += $(OBJ_PATH)/theme.o
+#VPATH += src/drivers/displays/graphic 
+#OBJS  += $(OBJ_PATH)/aafonts.o 
+#OBJS  += $(OBJ_PATH)/colors.o 
+#OBJS  += $(OBJ_PATH)/drawing.o 
+#OBJS  += $(OBJ_PATH)/fonts.o 
+#OBJS  += $(OBJ_PATH)/theme.o
 
-VPATH += src/drivers/displays/graphic/aafonts/aa2 
-OBJS  += $(OBJ_PATH)/DejaVuSansCondensed14_AA2.o 
-OBJS  += $(OBJ_PATH)/DejaVuSansCondensedBold14_AA2.o 
-OBJS  += $(OBJ_PATH)/DejaVuSansMono10_AA2.o 
-OBJS  += $(OBJ_PATH)/DejaVuSansMono13_AA2.o 
-OBJS  += $(OBJ_PATH)/DejaVuSansMono14_AA2.o 
-OBJS  += $(OBJ_PATH)/FontCalibri18_AA2.o 
-OBJS  += $(OBJ_PATH)/FontCalibriBold18_AA2.o 
-OBJS  += $(OBJ_PATH)/FontCalibriItalic18_AA2.o 
-OBJS  += $(OBJ_PATH)/FontFranklinGothicBold99_Numbers_AA2.o
+#VPATH += src/drivers/displays/graphic/aafonts/aa2 
+#OBJS  += $(OBJ_PATH)/DejaVuSansCondensed14_AA2.o 
+#OBJS  += $(OBJ_PATH)/DejaVuSansCondensedBold14_AA2.o 
+#OBJS  += $(OBJ_PATH)/DejaVuSansMono10_AA2.o 
+#OBJS  += $(OBJ_PATH)/DejaVuSansMono13_AA2.o 
+#OBJS  += $(OBJ_PATH)/DejaVuSansMono14_AA2.o 
+#OBJS  += $(OBJ_PATH)/FontCalibri18_AA2.o 
+#OBJS  += $(OBJ_PATH)/FontCalibriBold18_AA2.o 
+#OBJS  += $(OBJ_PATH)/FontCalibriItalic18_AA2.o 
+#OBJS  += $(OBJ_PATH)/FontFranklinGothicBold99_Numbers_AA2.o
 
-VPATH += src/drivers/displays/graphic/aafonts/aa4 
-OBJS  += $(OBJ_PATH)/FontCalibri18_AA4.o
+#VPATH += src/drivers/displays/graphic/aafonts/aa4 
+#OBJS  += $(OBJ_PATH)/FontCalibri18_AA4.o
 
-VPATH += src/drivers/displays/graphic/fonts 
-OBJS  += $(OBJ_PATH)/dejavusans9.o 
-OBJS  += $(OBJ_PATH)/dejavusansbold9.o 
-OBJS  += $(OBJ_PATH)/dejavusanscondensed9.o 
-OBJS  += $(OBJ_PATH)/dejavusansmono8.o 
-OBJS  += $(OBJ_PATH)/dejavusansmonobold8.o 
-OBJS  += $(OBJ_PATH)/veramono9.o 
-OBJS  += $(OBJ_PATH)/veramono11.o 
-OBJS  += $(OBJ_PATH)/veramonobold9.o 
-OBJS  += $(OBJ_PATH)/veramonobold11.o 
-OBJS  += $(OBJ_PATH)/verdana9.o 
-OBJS  += $(OBJ_PATH)/verdana14.o 
-OBJS  += $(OBJ_PATH)/verdanabold14.o
+#VPATH += src/drivers/displays/graphic/fonts 
+#OBJS  += $(OBJ_PATH)/dejavusans9.o 
+#OBJS  += $(OBJ_PATH)/dejavusansbold9.o 
+#OBJS  += $(OBJ_PATH)/dejavusanscondensed9.o 
+#OBJS  += $(OBJ_PATH)/dejavusansmono8.o 
+#OBJS  += $(OBJ_PATH)/dejavusansmonobold8.o 
+#OBJS  += $(OBJ_PATH)/veramono9.o 
+#OBJS  += $(OBJ_PATH)/veramono11.o 
+#OBJS  += $(OBJ_PATH)/veramonobold9.o 
+#OBJS  += $(OBJ_PATH)/veramonobold11.o 
+#OBJS  += $(OBJ_PATH)/verdana9.o 
+#OBJS  += $(OBJ_PATH)/verdana14.o 
+#OBJS  += $(OBJ_PATH)/verdanabold14.o
 
-VPATH += src/drivers/displays/graphic/hw
-OBJS  += $(OBJ_PATH)/hx8340b.o 
+#VPATH += src/drivers/displays/graphic/hw
+#OBJS  += $(OBJ_PATH)/hx8340b.o 
 # OBJS  += $(OBJ_PATH)/hx8347g.o
 
-VPATH += src/drivers/displays/segment/ht16k33
-OBJS  += $(OBJ_PATH)/ht16k33.o
+#VPATH += src/drivers/displays/segment/ht16k33
+#OBJS  += $(OBJ_PATH)/ht16k33.o
 
-VPATH += src/drivers/filters/iir
-OBJS  += $(OBJ_PATH)/iir_f.o
-OBJS  += $(OBJ_PATH)/iir_i.o
-OBJS  += $(OBJ_PATH)/iir_u16.o
+#VPATH += src/drivers/filters/iir
+#OBJS  += $(OBJ_PATH)/iir_f.o
+#OBJS  += $(OBJ_PATH)/iir_i.o
+#OBJS  += $(OBJ_PATH)/iir_u16.o
 
-VPATH += src/drivers/filters/ma
-OBJS  += $(OBJ_PATH)/sma_f.o 
-OBJS  += $(OBJ_PATH)/sma_i.o 
-OBJS  += $(OBJ_PATH)/sma_u16.o
-OBJS  += $(OBJ_PATH)/wma_f.o 
-OBJS  += $(OBJ_PATH)/wma_i.o 
-OBJS  += $(OBJ_PATH)/wma_u16.o
+#VPATH += src/drivers/filters/ma
+#OBJS  += $(OBJ_PATH)/sma_f.o 
+#OBJS  += $(OBJ_PATH)/sma_i.o 
+#OBJS  += $(OBJ_PATH)/sma_u16.o
+#OBJS  += $(OBJ_PATH)/wma_f.o 
+#OBJS  += $(OBJ_PATH)/wma_i.o 
+#OBJS  += $(OBJ_PATH)/wma_u16.o
 
-VPATH += src/drivers/motor/stepper
-OBJS  += $(OBJ_PATH)/stepper.o
+#VPATH += src/drivers/motor/stepper
+#OBJS  += $(OBJ_PATH)/stepper.o
 
-VPATH += src/drivers/pwm/pca9685
-OBJS  += $(OBJ_PATH)/pca9685.o
+#VPATH += src/drivers/pwm/pca9685
+#OBJS  += $(OBJ_PATH)/pca9685.o
 
-VPATH += src/drivers/rf/802.15.4/chibi
-OBJS  += $(OBJ_PATH)/chb.o 
-OBJS  += $(OBJ_PATH)/chb_buf.o 
-OBJS  += $(OBJ_PATH)/chb_drvr.o 
-OBJS  += $(OBJ_PATH)/chb_eeprom.o 
-OBJS  += $(OBJ_PATH)/chb_spi.o
-OBJS  += $(OBJ_PATH)/messages.o
+#VPATH += src/drivers/rf/802.15.4/chibi
+#OBJS  += $(OBJ_PATH)/chb.o 
+#OBJS  += $(OBJ_PATH)/chb_buf.o 
+#OBJS  += $(OBJ_PATH)/chb_drvr.o 
+#OBJS  += $(OBJ_PATH)/chb_eeprom.o 
+#OBJS  += $(OBJ_PATH)/chb_spi.o
+#OBJS  += $(OBJ_PATH)/messages.o
 
-VPATH += src/drivers/rf/nfc/pn532
-OBJS  += $(OBJ_PATH)/pn532.o 
-OBJS  += $(OBJ_PATH)/pn532_bus_i2c.o 
-OBJS  += $(OBJ_PATH)/pn532_bus_uart.o
+#VPATH += src/drivers/rf/nfc/pn532
+#OBJS  += $(OBJ_PATH)/pn532.o 
+#OBJS  += $(OBJ_PATH)/pn532_bus_i2c.o 
+#OBJS  += $(OBJ_PATH)/pn532_bus_uart.o
 
-VPATH += src/drivers/rf/nfc/pn532/helpers
-OBJS  += $(OBJ_PATH)/pn532_config.o 
-OBJS  += $(OBJ_PATH)/pn532_gpio.o 
-OBJS  += $(OBJ_PATH)/pn532_mifare_classic.o 
-OBJS  += $(OBJ_PATH)/pn532_mifare_ultralight.o 
-OBJS  += $(OBJ_PATH)/pn532_ndef.o 
-OBJS  += $(OBJ_PATH)/pn532_ndef_cards.o 
+#VPATH += src/drivers/rf/nfc/pn532/helpers
+#OBJS  += $(OBJ_PATH)/pn532_config.o 
+#OBJS  += $(OBJ_PATH)/pn532_gpio.o 
+#OBJS  += $(OBJ_PATH)/pn532_mifare_classic.o 
+#OBJS  += $(OBJ_PATH)/pn532_mifare_ultralight.o 
+#OBJS  += $(OBJ_PATH)/pn532_ndef.o 
+#OBJS  += $(OBJ_PATH)/pn532_ndef_cards.o 
 
-VPATH += src/drivers/rf/wifi/cc3000
-OBJS  += $(OBJ_PATH)/spi.o 
-OBJS  += $(OBJ_PATH)/wifi.o 
+#VPATH += src/drivers/rf/wifi/cc3000
+#OBJS  += $(OBJ_PATH)/spi.o 
+#OBJS  += $(OBJ_PATH)/wifi.o 
 
-VPATH += src/drivers/rf/wifi/cc3000/hostdriver
-OBJS  += $(OBJ_PATH)/cc3000_common.o 
-OBJS  += $(OBJ_PATH)/evnt_handler.o 
-OBJS  += $(OBJ_PATH)/hci.o 
-OBJS  += $(OBJ_PATH)/netapp.o 
-OBJS  += $(OBJ_PATH)/nvmem.o 
-OBJS  += $(OBJ_PATH)/security.o 
-OBJS  += $(OBJ_PATH)/socket.o 
-OBJS  += $(OBJ_PATH)/wlan.o 
+#VPATH += src/drivers/rf/wifi/cc3000/hostdriver
+#OBJS  += $(OBJ_PATH)/cc3000_common.o 
+#OBJS  += $(OBJ_PATH)/evnt_handler.o 
+#OBJS  += $(OBJ_PATH)/hci.o 
+#OBJS  += $(OBJ_PATH)/netapp.o 
+#OBJS  += $(OBJ_PATH)/nvmem.o 
+#OBJS  += $(OBJ_PATH)/security.o 
+#OBJS  += $(OBJ_PATH)/socket.o 
+#OBJS  += $(OBJ_PATH)/wlan.o 
 
-VPATH += src/drivers/rf/nfc/pn532/mem_allocator
-OBJS  += $(OBJ_PATH)/bget.o 
-OBJS  += $(OBJ_PATH)/pn532_mem.o 
+#VPATH += src/drivers/rf/nfc/pn532/mem_allocator
+#OBJS  += $(OBJ_PATH)/bget.o 
+#OBJS  += $(OBJ_PATH)/pn532_mem.o 
 
 VPATH += src/drivers/rtc
 OBJS  += $(OBJ_PATH)/rtc.o
 
-VPATH += src/drivers/rtc/pcf2129
-OBJS  += $(OBJ_PATH)/pcf2129.o
+#VPATH += src/drivers/rtc/pcf2129
+#OBJS  += $(OBJ_PATH)/pcf2129.o
 
-VPATH += src/drivers/sensors
-OBJS  += $(OBJ_PATH)/sensors.o
-OBJS  += $(OBJ_PATH)/sensorpoll.o
+#VPATH += src/drivers/sensors
+#OBJS  += $(OBJ_PATH)/sensors.o
+#OBJS  += $(OBJ_PATH)/sensorpoll.o
 
-VPATH += src/drivers/sensors/accelerometers
-OBJS  += $(OBJ_PATH)/accelerometers.o
-OBJS  += $(OBJ_PATH)/adxl345.o
-OBJS  += $(OBJ_PATH)/lis3dh.o
-OBJS  += $(OBJ_PATH)/lsm303accel.o
+#VPATH += src/drivers/sensors/accelerometers
+#OBJS  += $(OBJ_PATH)/accelerometers.o
+#OBJS  += $(OBJ_PATH)/adxl345.o
+#OBJS  += $(OBJ_PATH)/lis3dh.o
+#OBJS  += $(OBJ_PATH)/lsm303accel.o
 
-VPATH += src/drivers/sensors/gyroscopes
-OBJS  += $(OBJ_PATH)/l3gd20.o
+#VPATH += src/drivers/sensors/gyroscopes
+#OBJS  += $(OBJ_PATH)/l3gd20.o
 
-VPATH += src/drivers/sensors/light
-OBJS  += $(OBJ_PATH)/tsl2561.o
+#VPATH += src/drivers/sensors/light
+#OBJS  += $(OBJ_PATH)/tsl2561.o
 
-VPATH += src/drivers/sensors/magnetometers
-OBJS  += $(OBJ_PATH)/magnetometers.o
-OBJS  += $(OBJ_PATH)/lsm303mag.o
+#VPATH += src/drivers/sensors/magnetometers
+#OBJS  += $(OBJ_PATH)/magnetometers.o
+#OBJS  += $(OBJ_PATH)/lsm303mag.o
 
-VPATH += src/drivers/sensors/pressure
-OBJS  += $(OBJ_PATH)/pressure.o
-OBJS  += $(OBJ_PATH)/bmp085.o
-OBJS  += $(OBJ_PATH)/mpl115a2.o
+#VPATH += src/drivers/sensors/pressure
+#OBJS  += $(OBJ_PATH)/pressure.o
+#OBJS  += $(OBJ_PATH)/bmp085.o
+#OBJS  += $(OBJ_PATH)/mpl115a2.o
 
-VPATH += src/drivers/sensors/temperature
-OBJS  += $(OBJ_PATH)/lm75b.o
+#VPATH += src/drivers/sensors/temperature
+#OBJS  += $(OBJ_PATH)/lm75b.o
 
 VPATH += src/drivers/storage
 OBJS  += $(OBJ_PATH)/logger.o 
 
-VPATH += src/drivers/storage/fatfs
-OBJS  += $(OBJ_PATH)/ff.o 
-OBJS  += $(OBJ_PATH)/mmc.o
+#VPATH += src/drivers/storage/fatfs
+#OBJS  += $(OBJ_PATH)/ff.o 
+#OBJS  += $(OBJ_PATH)/mmc.o
 
 VPATH += src/localisation
 OBJS  += $(OBJ_PATH)/localisation.o

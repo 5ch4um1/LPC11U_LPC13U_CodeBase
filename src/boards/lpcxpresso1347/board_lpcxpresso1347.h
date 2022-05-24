@@ -184,7 +184,7 @@ extern "C" {
     NOTE: GPIO ISRs are handled separately in GPIO INTERRUPTS below
     -----------------------------------------------------------------------*/
     //#define CFG_ENABLE_I2C
-    //#define CFG_ENABLE_UART
+    #define CFG_ENABLE_UART
     #define CFG_ENABLE_USB
     //#define CFG_ENABLE_TIMER32
 /*=========================================================================*/
@@ -269,8 +269,8 @@ extern "C" {
                               for 10-bit mode (LPC1347 only)
 
     -----------------------------------------------------------------------*/
-    #define CFG_ADC_MODE_LOWPOWER       (0)
-    #define CFG_ADC_MODE_10BIT          (0)
+   // #define CFG_ADC_MODE_LOWPOWER       (0)
+   // #define CFG_ADC_MODE_10BIT          (0)
 /*=========================================================================*/
 
 
@@ -345,8 +345,8 @@ extern "C" {
     -----------------------------------------------------------------------*/
     #define CFG_PRINTF_MAXSTRINGSIZE    (255)
 
-    // #define CFG_PRINTF_UART
-    #define CFG_PRINTF_USBCDC
+     #define CFG_PRINTF_UART
+    //#define CFG_PRINTF_USBCDC
     // #define CFG_PRINTF_DEBUG
 
     #ifdef CFG_PRINTF_DEBUG
@@ -431,9 +431,9 @@ extern "C" {
     CFG_PROTOCOL             If this field is defined the binary command
                               parser will be included
     -----------------------------------------------------------------------*/
-    #define CFG_PROTOCOL
+   // #define CFG_PROTOCOL
 
-    #define CFG_PROTOCOL_VIA_HID
+   // #define CFG_PROTOCOL_VIA_HID
     // #define CFG_PROTOCOL_VIA_BULK
 
     #if defined(CFG_PROTOCOL) && !defined(CFG_PROTOCOL_VIA_HID) && !defined(CFG_PROTOCOL_VIA_BULK)
@@ -675,12 +675,12 @@ extern "C" {
       #define CFG_USB_STRING_PRODUCT            "LPC1347 LPCXpresso"
       #define CFG_USB_VENDORID                  (0x1FC9)
 
-      #define CFG_USB_CDC
+     // #define CFG_USB_CDC
 
-      // #define CFG_USB_HID_KEYBOARD
+       #define CFG_USB_HID_KEYBOARD
       // #define CFG_USB_HID_MOUSE
-      #define CFG_USB_HID_GENERIC
-      #define CFG_USB_HID_GENERIC_REPORT_SIZE (64)
+    //  #define CFG_USB_HID_GENERIC
+    //  #define CFG_USB_HID_GENERIC_REPORT_SIZE (64)
 
       // #define CFG_USB_MSC
 

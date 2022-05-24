@@ -253,31 +253,188 @@ void boardInit(void)
 volatile uint32_t test[8] = { 0 };
 int main(void)
 {
-  uint32_t currentSecond, lastSecond;
-  currentSecond = lastSecond = 0;
+//  uint32_t currentSecond, lastSecond;
+//  currentSecond = lastSecond = 0;
 
   /* Configure the HW */
   boardInit();
 
-  while (1)
-  {
-    /* Blinky (1Hz) */
-    currentSecond = delayGetSecondsActive();
-    if (currentSecond != lastSecond)
+  delay (3000);
+
+ {
+
+
+    // Send an unmodified 'a' character
+    if (usb_isConfigured())
     {
-      lastSecond = currentSecond;
-      boardLED(lastSecond % 2);
+      uint8_t keys[6] = {HID_Keyboardt};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
     }
+    
+    {
+      uint8_t keys[6] = {HID_Keyboardh};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }
+    
+    {
+      uint8_t keys[6] = {HID_Keyboardi};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }
+    
+    {
+      uint8_t keys[6] = {HID_Keyboards};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }    
 
-    /* Check for binary protocol input if CFG_PROTOCOL is enabled */
-    #ifdef CFG_PROTOCOL
-      prot_task(NULL);
-    #endif
+    {
+      uint8_t keys[6] = {HID_KeyboardSpacebar};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }
+    
+    {
+      uint8_t keys[6] = {HID_Keyboardi};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }    
+     {
+      uint8_t keys[6] = {HID_Keyboards};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }     
+     
+     
+     {
+      uint8_t keys[6] = {HID_KeyboardSpacebar};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }  
+    
+    {
+      uint8_t keys[6] = {HID_Keyboarda};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }     
+    
+         {
+      uint8_t keys[6] = {HID_KeyboardSpacebar};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    } 
+    
+     {
+      uint8_t keys[6] = {HID_Keyboardg};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }   
+     {
+      uint8_t keys[6] = {HID_Keyboardo};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }       
+    
+         {
+      uint8_t keys[6] = {HID_Keyboardo};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }        {
+      uint8_t keys[6] = {HID_Keyboardd};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }   
+   {
+      uint8_t keys[6] = {HID_KeyboardSpacebar};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }  
+    
+  {
+      uint8_t keys[6] = {HID_Keyboardu};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }       
+    
+         {
+      uint8_t keys[6] = {HID_Keyboards};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }        {
+      uint8_t keys[6] = {HID_Keyboardb};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }     
+    
+    {
+      uint8_t keys[6] = {HID_KeyboardSpacebar};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }  
+    
+    {
+      uint8_t keys[6] = {HID_Keyboardd};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }       
+    
+         {
+      uint8_t keys[6] = {HID_Keyboarde};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }     
+    
+       {
+      uint8_t keys[6] = {HID_Keyboardv};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }     
+    
+  {
+      uint8_t keys[6] = {HID_Keyboardi};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }       
+    
+         {
+      uint8_t keys[6] = {HID_Keyboardc};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }       
+    
+     {
+      uint8_t keys[6] = {HID_Keyboarde};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }        
+    
+    
+   {
+      uint8_t keys[6] = {HID_Keyboarddot};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (200);
+    }        
+    
+      {
+      uint8_t keys[6] = {HID_KeyboardReturnEnter};
+      usb_hid_keyboard_sendKeys(0x00, keys, 1);
+      delay (100);
+    }    
+    
+     // Send Windows + 'e' (shortcut for 'explorer.exe')
+  //  if (usb_isConfigured())
+   // {
+    //  uint8_t keys = {HID_USAGE_KEYBOARD_aA + 'e' - 'a' };
+     // usb_hid_keyboard_sendKeys(HID_KEYMODIFIER_LEFTSHIFT, keys, 1);
+   // }
+    
+    
+    
+    delay (2000);
 
-    /* Poll for CLI input if CFG_INTERFACE is enabled */
-    #ifdef CFG_INTERFACE
-      cliPoll();
-    #endif
+
 
 //    if ( usb_custom_is_ready_to_send() )
 //    {
